@@ -1,0 +1,23 @@
+{
+  "name": "mocha-ui-runner",
+  "version": "0.0.1",
+  "description": "UI Runner for Mocha based tests. Launches as standalone server-side rendered UI in your browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mocha",
+    "ui",
+    "runner",
+    "test",
+    "runner",
+    "gui",
+    "browser"
+  ],
+  "author": "Dariusz Gorak",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "9.1.3"
+  }
+}
