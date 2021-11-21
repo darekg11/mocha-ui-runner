@@ -1,12 +1,20 @@
 {
   "name": "mocha-ui-runner",
   "version": "0.0.1",
-  "description": "UI Runner for Mocha based tests. Launches as standalone server-side rendered UI in your browser.",
+  "description": "UI Runner for Mocha based tests. Launches as standalone UI in your browser.",
   "main": "index.js",
+  "source": "lib/app/index.html",
+  "targets": {
+    "main": false,
+    "default": {
+      "distDir": "lib/app/dist"
+    }
+  },
   "scripts": {
     "dev": "nodemon index.js",
+    "watch-web-app": "parcel watch",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-web-app": "rm -rf lib/app/dist && parcel build"
   },
   "keywords": [
     "mocha",
@@ -20,14 +28,22 @@
   "author": "Dariusz Gorak",
   "license": "MIT",
   "dependencies": {
+    "@quasar/extras": "1.12.1",
+    "axios": "0.24.0",
     "body-parser": "1.19.0",
     "express": "4.17.1",
     "glob": "7.2.0",
     "mocha": "9.1.3",
+    "quasar": "2.3.3",
+    "vue": "3.2.22",
+    "vuex": "4.0.2",
     "winston": "3.3.3",
     "yargs": "17.2.1"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "2.0.1",
+    "@parcel/transformer-vue": "2.0.1",
+    "@vue/compiler-sfc": "^3.2.22",
     "assert": "2.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -35,6 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "nodemon": "2.0.15"
+    "nodemon": "2.0.15",
+    "parcel": "2.0.1"
   }
 }
