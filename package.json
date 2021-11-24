@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon --ignore '*.json' index.js",
     "watch-web-app": "parcel watch",
     "start": "node index.js",
     "build-web-app": "rm -rf lib/app/dist && parcel build"
