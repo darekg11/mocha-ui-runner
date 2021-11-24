@@ -20,6 +20,9 @@
         "react"
     ],
     "rules": {
+        "max-len": 0,
+        "no-console": [ "error", { "allow": [ "error" ] }],
+        "class-methods-use-this": 0,
         "quotes": [ "error", "double" ],
         "no-param-reassign": [ "error", { "props": true, "ignorePropertyModificationsFor": [ "state" ] } ]
     }
