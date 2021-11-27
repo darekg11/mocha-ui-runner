@@ -1,0 +1,20 @@
+.component-header-base {
+	.status-panel {
+		display: flex;
+		flex: 8 1 0%;
+		align-items: center;
+		.single-info {
+			display: flex;
+			font-size: 21px;
+			padding-left: 50px;
+			padding-right: 50px;
+			.value {
+				text-decoration: underline;
+			}
+			p {
+				padding-left: 10px;
+				margin: 0;
+			}
+		}
+	}
+}
