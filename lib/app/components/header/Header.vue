@@ -16,7 +16,7 @@
           <p class="title">Total tests:</p><p class="value">{{ totalTests }}</p>
         </div>
       </div>
-      <q-toggle @update:model-value="toggleDarkMode"
+      <!-- <q-toggle @update:model-value="toggleDarkMode"
                   v-model="useDarkMode"
                   checked-icon="dark_mode"
                   color="green"
@@ -24,6 +24,7 @@
                   unchecked-icon="light_mode"
                   left-label
                   label="Dark mode" />
+      !-->
     </q-toolbar>
     <q-toolbar>
       <div class="status-panel">

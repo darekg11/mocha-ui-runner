@@ -5,10 +5,10 @@
     <q-drawer
       show-if-above
       side="left"
-      width=500
+      width=600
       bordered
     >
-      <!-- drawer content -->
+      <tests-list></tests-list>
     </q-drawer>
 
     <q-page-container>

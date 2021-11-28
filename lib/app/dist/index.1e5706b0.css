@@ -12075,4 +12075,8 @@ body.body--dark {
 .pending-tests-color {
   color: orange;
 }
+.component-tests-list-base .label {
+  display: flex;
+  flex: 1 1 0%;
+}
 /*# sourceMappingURL=index.1e5706b0.css.map */
